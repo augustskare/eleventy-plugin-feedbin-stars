@@ -1,6 +1,6 @@
 {
   "name": "eleventy-plugin-feedbin-stars",
-  "version": "2.0.0",
+  "version": "2.0.0-beta.1",
   "license": "MIT",
   "type": "module",
   "keywords": [
@@ -26,7 +26,7 @@
   },
   "dependencies": {
     "@11ty/eleventy-fetch": "^3.0.0",
-    "feedbin-stars": "^2.0.0-beta.1"
+    "feedbin-stars": "^2.0.1"
   },
   "devDependencies": {
     "prettier": "2.7.1",

@@ -1,6 +1,6 @@
 import { AssetCache } from "@11ty/eleventy-fetch";
 import type { Item } from "feedbin-stars";
-import { getStarredFeed } from "feedbin-stars";
+import getStarredFeed from "feedbin-stars";
 
 export default async function feedbinStarsPlugin(eleventyConfig, options) {
   if (typeof options.feed_id !== "string") {
