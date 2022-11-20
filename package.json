@@ -1,6 +1,6 @@
 {
   "name": "eleventy-plugin-feedbin-stars",
-  "version": "2.0.0-beta.1",
+  "version": "2.0.0-beta.2",
   "license": "MIT",
   "type": "module",
   "keywords": [
@@ -11,13 +11,13 @@
   "files": [
     "dist"
   ],
-  "main": "./dist/index.js",
-  "module": "./dist/index.mjs",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "exports": {
     ".": {
-      "import": "./dist/index.mjs",
-      "require": "./dist/index.js"
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
     }
   },
   "scripts": {
