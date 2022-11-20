@@ -1,0 +1,39 @@
+{
+  "name": "eleventy-plugin-feedbin-stars",
+  "version": "2.0.0",
+  "license": "MIT",
+  "type": "module",
+  "keywords": [
+    "eleventy",
+    "eleventy-plugin",
+    "feedbin"
+  ],
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "dev": "npm run build -- --watch",
+    "build": "tsup index.ts --format esm,cjs --clean --dts"
+  },
+  "dependencies": {
+    "@11ty/eleventy-fetch": "^3.0.0",
+    "feedbin-stars": "^2.0.0-beta.1"
+  },
+  "devDependencies": {
+    "prettier": "2.7.1",
+    "tsup": "^6.5.0",
+    "typescript": "^4.9.3"
+  },
+  "peerDependencies": {
+    "@11ty/eleventy": ">= 1.0.0"
+  }
+}
