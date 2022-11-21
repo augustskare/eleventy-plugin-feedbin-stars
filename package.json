@@ -1,6 +1,6 @@
 {
   "name": "eleventy-plugin-feedbin-stars",
-  "version": "2.0.0-beta.3",
+  "version": "2.0.0",
   "license": "MIT",
   "keywords": [
     "eleventy",
@@ -21,7 +21,8 @@
   },
   "scripts": {
     "dev": "npm run build -- --watch",
-    "build": "tsup index.ts --format esm,cjs --clean --dts"
+    "build": "tsup index.ts --format esm,cjs --clean --dts",
+    "prepublish": "npm run build"
   },
   "dependencies": {
     "@11ty/eleventy-fetch": "^3.0.0",
@@ -33,6 +34,6 @@
     "typescript": "^4.9.3"
   },
   "peerDependencies": {
-    "@11ty/eleventy": ">= 1.0.0"
+    "@11ty/eleventy": ">= 0.10.0"
   }
 }

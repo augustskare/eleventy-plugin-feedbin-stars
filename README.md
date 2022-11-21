@@ -15,7 +15,7 @@ or with npm
 In your `.eleventy.js`
 
 ```
-const feedbinStars = require("eleventy-plugin-feedbin-stars");
+const { default: feedbinStars } = require("eleventy-plugin-feedbin-stars");
 
 module.exports = function(eleventyConfig) {
   eleventyConfig.addPlugin(feedbinStars, {
@@ -40,7 +40,7 @@ Type: `string`<br>
 Required: `false`<br>
 Defaul: `"4h"`
 
-Uses eleventy-cache-assets under the hood, check the [documentation](https://www.npmjs.com/package/@11ty/eleventy-cache-assets#options) for duration options.
+Uses eleventy-fetch under the hood, check the [documentation](https://www.11ty.dev/docs/plugins/fetch/#change-the-cache-duration) for duration options.
 
 ## How to use
 
@@ -52,7 +52,7 @@ The plugin will create a feedbinStars collection. You are then able to loop over
   <li>
     <article>
       <h2><a href="{{ item.link }}" rel="noopener">{{ item.title }}</a></h2>
-      <p>{{ item.meta.host }}</p>
+      <p>{{ item.link }}</p>
     </article>
   </li>
   {% endfor %}
